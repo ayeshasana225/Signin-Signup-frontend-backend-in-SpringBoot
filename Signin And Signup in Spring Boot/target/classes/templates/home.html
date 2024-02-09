@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            background-image: url('https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_1280.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container{
+
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            background-color: #1B96A7;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+
+            width: 180px; /* Adjusted width */
+            height: 60px; /* Adjusted height */
+            margin: 10px auto; /* Centered and adjusted margin */
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #7EA1AE;
+        }
+    </style>
+</head>
+<body>
+<h1><i>Hello User</i></h1>
+<h1><i>To Access the Workplace please select </i></h1>
+<br>
+
+<button onclick="redirectToSignup()">New User</button>
+<p><b>OR</b></p>
+<button onclick="redirectToSignin()">Already have an account</button>
+
+<script>
+    function redirectToSignup() {
+        window.location.href = "/signup";
+    }
+
+    function redirectToSignin() {
+        window.location.href = "/signin";
+    }
+</script>
+</body>
+</html>
